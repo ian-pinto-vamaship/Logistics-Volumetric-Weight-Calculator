@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="@string/enter_l_b_h_values"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <!--<android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_b"
+        android:layout_below="@+id/text_view_header"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edit_text_b"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="B"
+            android:inputType="number"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>-->
+
+    <EditText
+        android:id="@+id/edit_text_b"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_header"
+        android:layout_centerHorizontal="true"
+        android:hint="B"
+        android:inputType="number"
+        android:maxLines="1" />
+    <TextView
+        android:id="@+id/text_view_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_text_b"
+        android:layout_toRightOf="@+id/edit_text_b"
+        android:text="cm" />
+
+    <!--<android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_l"
+        android:layout_below="@+id/text_view_header"
+        android:layout_toLeftOf="@+id/text_input_layout_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edit_text_l"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="L"
+            android:inputType="number"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>-->
+
+    <EditText
+        android:id="@+id/edit_text_l"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_header"
+        android:layout_toLeftOf="@+id/text_view_l"
+        android:hint="L"
+        android:inputType="number"
+        android:maxLines="1" />
+    <TextView
+        android:id="@+id/text_view_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_text_l"
+        android:layout_toLeftOf="@+id/edit_text_b"
+        android:text="cm" />
+
+    <!--<android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_h"
+        android:layout_below="@+id/text_view_header"
+        android:layout_toRightOf="@+id/text_input_layout_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edit_text_h"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="H"
+            android:inputType="number"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>-->
+
+    <EditText
+        android:id="@+id/edit_text_h"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_header"
+        android:layout_toRightOf="@+id/text_view_b"
+        android:hint="H"
+        android:inputType="number"
+        android:maxLines="1" />
+    <TextView
+        android:id="@+id/text_view_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_text_h"
+        android:layout_toRightOf="@+id/edit_text_h"
+        android:text="cm" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_calculate"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_b"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="CALCULATE" />
+
+    <TextView
+        android:id="@+id/text_view_volumetric_weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_calculate"
+        android:layout_toLeftOf="@+id/text_view_volumetric_weight"
+        android:layout_margin="32dp"
+        android:text="Volumetric Weight (Kg):" />
+    <TextView
+        android:id="@+id/text_view_volumetric_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:text="0.0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</RelativeLayout>
